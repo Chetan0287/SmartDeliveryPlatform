@@ -1,39 +1,129 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-    background-color: #f4f7f9;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7f9;
+    color: #222;
+}
+
+.navbar {
+    background: #ffffff;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
     color: #0078d4;
 }
 
-h2 {
-    color: #333333;
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
 }
 
-ul {
+.hero {
+    min-height: 480px;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #0078d4, #00a6fb);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 750px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 650px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
     background: white;
-    padding: 20px 40px;
+    color: #0078d4;
+    padding: 14px 24px;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 700px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-li {
-    margin: 10px 0;
+.section {
+    padding: 70px 8%;
 }
 
-footer {
-    margin-top: 30px;
-    color: #666666;
-    font-size: 14px;
+.section h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+    color: #222;
+}
+
+.cards {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .card {
     background: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex: 1;
+    min-width: 260px;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: #0078d4;
+}
+
+.light {
+    background: #ffffff;
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.features span {
+    background: #e8f3ff;
+    color: #0078d4;
+    padding: 12px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.contact {
+    text-align: center;
+    background: #eef6ff;
+}
+
+.contact p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 700px;
 }
